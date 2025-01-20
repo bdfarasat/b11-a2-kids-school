@@ -1,0 +1,64 @@
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  body{
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 26px;
+  }
+  .part-1{
+    display: flex;
+    gap: 11px;
+  }
+  .part-1 > img{
+    width: 62px;
+    height: 62px;
+  }
+  .part-1 h5{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 17px;
+  }
+  .part-2 > ul{
+    display: flex;
+    gap: 20px;
+  }
+  .part-2 > ul > li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  .li-1{
+    color: #FEA301;
+  }
+  .li-2{
+    color: #01ACFD;
+  }
+  .li-3{
+    color: #05D4DF;
+  }
+  .li-4{
+    color: #5D58EF;
+  }
+  .part-3 img{
+    height: 30px;
+    width: 30px;
+    display: none;
+  }
+  .top-btn{
+    background-color: #FEA301;
+    color: white;
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
