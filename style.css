@@ -277,6 +277,7 @@ nav {
 .main-div {
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 .secondary-div1 {
