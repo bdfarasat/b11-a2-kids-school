@@ -254,19 +254,37 @@ nav {
 .left {
     width: 60px;
     height: 60px;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.left:hover {
+    opacity: 1;
 }
 
 .right {
     width: 60px;
     height: 60px;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.right:hover {
+    opacity: 1;
 }
 
 /* Story Section */
-.stories {
-    background-image: url(assets/bg.png);
-    background-image: linear-gradient(#FFFFFF, #f0e6d6);
-    justify-items: center;
+.stories {    
+    background-image: linear-gradient(
+                    to bottom , 
+                    rgba(255, 254, 254, 0.5), 
+                    rgb(255, 233, 196)
+                ), 
+                url(assets/bg.png);
 
+    justify-items: center;
 }
 
 .stories h4 {
@@ -280,6 +298,8 @@ nav {
     justify-content: center;
 }
 
+/* Secondary Div */
+
 .secondary-div1 {
     max-width: 540px;
     background-color: white;
@@ -287,10 +307,11 @@ nav {
     /* border: solid 1px red; */
 }
 
-.secondary-div1 img{
+.secondary-div1 img {
     border-radius: 16px 16px 0 0;
 }
-.secondary-div1 button{
+
+.secondary-div1 button {
     background-color: #3CD8E8;
     color: white;
     font-weight: 500px;
@@ -304,14 +325,15 @@ nav {
     left: 25px;
 }
 
-.secondary-div1 h6{
+.secondary-div1 h6 {
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 20px;
     padding-left: 40px;
     margin-bottom: 40px;
 }
-.secondary-div1-pera{
+
+.secondary-div1-pera {
     font-weight: 500px;
     color: #666666;
     padding: 0 40px;
@@ -325,10 +347,56 @@ nav {
     gap: 20px;
     background-color: white;
 }
-.card{
+.secondary-div2 .card{
+    max-width: 291px;
+    background-color: white;
+    border-radius: 16px;
+    /* border: solid 1px red; */
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-div2 .card img {
+    border-radius: 16px 16px 0 0;
+}
+
+.card {
     border-radius: 16px;
     /* border: solid 1px red; */
 
+}
+
+.secondary-div2 .card button {
+    background-color: #3CD8E8;
+    color: white;
+    font-weight: 500px;
+    width: 174px;
+    height: 38px;
+    border-radius: 47px;
+    border: none;
+    /* margin-top: -500px; */
+    position: relative;
+    top: -25px;
+    left: 25px;
+}
+
+.secondary-div2 .card p{
+    font-weight: bold;
+    font-size: 0.95875rem;
+    padding: 0px 40px 20px;
+}
+
+.story-btn{
+    background-color: #FEA301;
+    color: white;
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width:576px) {
@@ -378,5 +446,33 @@ nav {
 
     .round-shapes {
         display: none;
+    }
+    .secondary-div1{
+        display: none;
+    }
+    .stories{
+        margin: 0 20px;
+        /* max-width: 80%; */
+        justify-content: center;
+    }
+    .secondary-div2{
+        /* max-width: 80%; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        justify-content: center;
+        /* margin: 0 20px; */
+    }
+    .secondary-div2 .card{
+        max-width: 100%;
+    }
+    .secondary-div2 .card img{
+        max-width: 100%;
+    }
+    .secondary-div2 .card button{
+        max-width: 70%;
+    }
+    .secondary-div2 .card p{
+        padding: 0px 20px 20px;
     }
 }
