@@ -9,6 +9,9 @@ body {
     max-width: 1600px;
     margin: 0 140px;
 }
+footer{
+    max-width: 1600px;
+}
 
 /* Nav Section */
 nav {
@@ -132,6 +135,7 @@ nav {
 .curriculum h4 {
     font-weight: bold;
     font-size: 2.875rem;
+    text-align: center;
 }
 
 .boxs {
@@ -398,6 +402,73 @@ nav {
     margin-top: 80px;
     margin-bottom: 60px;
 }
+/* Footer Section */
+
+footer{
+    /* background-color: #01ACFD; */
+    /* padding: 76px 228px 174px 140px; */
+}
+.foot-section{
+    display: flex;
+    justify-content: flex-start; 
+    background-color: #01ACFD;
+    padding: 76px 202px 174px 140px; 
+    
+}
+.foot1{
+    width: 50%;
+}
+.foot1-top{
+    display: flex;
+}
+.foot1-top img{
+    width: 90px;
+    height: 107px;
+}
+.foot1-top h4{
+    font-weight: bold;
+    font-size: 2.63375rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.foot1 p{
+    color: white;
+    font-size: 1.25rem;
+}
+.foot2{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 10px; */
+    margin-left: 36px;
+}
+.foot2 h6{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.foot2 p{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+.foot3{
+    margin-left: 94px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot3 h5{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+    
+}
 
 @media screen and (max-width:576px) {
     body {
@@ -476,5 +547,32 @@ nav {
     }
     .secondary-div2 .card p{
         padding: 0px 20px 20px;
+    }
+    footer{
+        margin: 0px 20px;
+    }
+    .foot-section{
+        flex-direction: column;
+        padding: 76px 20px 20px 20px;
+    }
+    .foot1{
+        max-width: 300px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .foot1 p{
+        width: 400px;
+        margin-bottom: 80px;
+    }
+    .foot2{
+        margin-left: 0px;
+        margin-bottom: 80px;
+    }
+    .foot3{
+        margin-left: 0px;
+        margin-bottom: 40px;
     }
 }
