@@ -149,7 +149,6 @@ nav {
     text-align: center;
     border-radius: 19px;
     background-image: linear-gradient(#DEF5FF, rgba(255, 255, 255, 0));
-
 }
 
 .box1 img {
@@ -177,6 +176,7 @@ nav {
     font-size: 0.943125rem;
     margin-top: 34px;
     padding-bottom: 60px;
+    cursor: pointer;
 }
 
 /* ----------- */
@@ -212,6 +212,7 @@ nav {
     font-size: 0.943125rem;
     margin-top: 34px;
     padding-bottom: 60px;
+    cursor: pointer;
 }
 
 /* ------- */
@@ -247,6 +248,7 @@ nav {
     font-size: 0.943125rem;
     margin-top: 34px;
     padding-bottom: 60px;
+    cursor: pointer;
 }
 
 /* Card Section */
@@ -257,9 +259,9 @@ nav {
 
 .left {
     width: 60px;
-    height: 60px;
+    height: 66px;
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.5;
     transition: 0.3s;
 }
 
@@ -269,9 +271,9 @@ nav {
 
 .right {
     width: 60px;
-    height: 60px;
+    height: 66px;
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.5;
     transition: 0.3s;
 }
 
